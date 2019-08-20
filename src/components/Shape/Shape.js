@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function Shape({ text, color, backColor }) {
   return (
-    <section style={{ backgroundColor: { backColor } }}>
-      <p style={{ color: { color } }}>{text}</p>
+    <section style={{ backgroundColor:  backColor  }}>
+      <p style={{ color: color }}>{text}</p>
     </section>
   );
 }

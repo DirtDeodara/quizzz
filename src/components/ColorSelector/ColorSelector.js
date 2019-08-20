@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ColorSelector({ color, backColor, handleSubmit, handleColorChange, handleBackColorChange }) {
+function ColorSelector({ color, backColor, handleColorChange, handleBackColorChange }) {
   const colorArr = ['red', 'green', 'blue', 'purple'];
   const mappedColors = colorArr.map(color => {
     return <option key={color} value={color}>{color}</option>;
@@ -13,9 +13,9 @@ function ColorSelector({ color, backColor, handleSubmit, handleColorChange, hand
   });
   return (
     <>
-    <form onSubmit={handleSubmit}>
-      <select name="color" defaultValue={color} handleChange={handleColorChange}>{mappedColors}</select>
-      <select name="backgroundColor" defaultValue={backColor} handleChange={handleBackColorChange}>{mappedBackColors}</select>
+    <form>
+      <select name="color" defaultValue={color} onChange={handleColorChange}>{mappedColors}</select>
+      <select name="backgroundColor" defaultValue={backColor} onChange={handleBackColorChange}>{mappedBackColors}</select>
     </form>
   </>
   );
@@ -24,7 +24,6 @@ function ColorSelector({ color, backColor, handleSubmit, handleColorChange, hand
 ColorSelector.propTypes = {
   color: PropTypes.string.isRequired,
   backColor: PropTypes.string.isRequired,
-  handleSubmit: PropTypes.func.isRequired,
   handleColorChange: PropTypes.func.isRequired,
   handleBackColorChange: PropTypes.func.isRequired
 };

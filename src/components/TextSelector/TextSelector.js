@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 
 function TextSelector({ text, handleChange }) {
   return (
-    <form>
-      <input 
-        placeholder="Give it to me..." 
-        type="text" 
-        value={text}
-        onChange={handleChange}
-      />
-    </form>
+    <input
+      placeholder="Give it to me..."
+      type="text"
+      value={text}
+      onChange={handleChange}
+    />
   );
 }
 

@@ -10,17 +10,6 @@ export default class NameTag extends Component {
     backColor: ''
   }
 
-  handleSubmit = event => {
-    event.preventDefault();
-    const { target } = this.state;
-    this.setState(() => {
-      return {
-        color: target.value,
-        backColor: target.value
-      };
-    });
-  }
-
   handleChange = ({ target }) => {
     this.setState({ text: target.value });
   }
@@ -37,7 +26,7 @@ export default class NameTag extends Component {
       <>
         <TextSelector text={text} handleChange={this.handleChange}/>
         <Shape text={text} color={color} backColor={backColor}/>
-        <ColorSelector color={color} backColor={backColor} handleSubmit={this.handleSubmit} handleChange={this.handleColorChange} />
+        <ColorSelector color={color} backColor={backColor} handleColorChange={this.handleColorChange} handleBackColorChange={this.handleBackColorChange} />
       </>
     );
   }
