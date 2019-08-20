@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorSelector component renders ColorSelector 1`] = `
+<Fragment>
+  <form>
+    <select
+      name="color"
+    >
+      <option
+        key="red"
+        value="red"
+      >
+        red
+      </option>
+      <option
+        key="green"
+        value="green"
+      >
+        green
+      </option>
+      <option
+        key="blue"
+        value="blue"
+      >
+        blue
+      </option>
+      <option
+        key="purple"
+        value="purple"
+      >
+        purple
+      </option>
+    </select>
+    <select
+      name="backgroundColor"
+    >
+      <option
+        key="lightgrey"
+        value="lightgrey"
+      >
+        lightgrey
+      </option>
+      <option
+        key="cream"
+        value="cream"
+      >
+        cream
+      </option>
+      <option
+        key="lightblue"
+        value="lightblue"
+      >
+        lightblue
+      </option>
+      <option
+        key="lightpurple"
+        value="lightpurple"
+      >
+        lightpurple
+      </option>
+    </select>
+  </form>
+</Fragment>
+`;

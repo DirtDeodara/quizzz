@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextSelector component renders TextSelector 1`] = `
+<form>
+  <input
+    placeholder="Give it to me..."
+    type="text"
+  />
+</form>
+`;

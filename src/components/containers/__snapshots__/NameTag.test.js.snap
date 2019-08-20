@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameTag component renders NameTag 1`] = `
+<Fragment>
+  <TextSelector
+    handleChange={[Function]}
+    text=""
+  />
+  <Shape
+    backColor=""
+    color=""
+    text=""
+  />
+  <ColorSelector
+    backColor=""
+    color=""
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+  />
+</Fragment>
+`;

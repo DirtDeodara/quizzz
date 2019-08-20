@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shape component renders Shape 1`] = `
+<section
+  style={
+    Object {
+      "backgroundColor": Object {
+        "backColor": undefined,
+      },
+    }
+  }
+>
+  <p
+    style={
+      Object {
+        "color": Object {
+          "color": undefined,
+        },
+      }
+    }
+  />
+</section>
+`;
